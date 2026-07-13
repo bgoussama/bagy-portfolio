@@ -1,0 +1,31 @@
+:root {
+  color-scheme: dark;
+  --background: #030712;
+  --foreground: #f8fafc;
+  --muted: #111827;
+  --muted-foreground: #94a3b8;
+  --border: rgba(148, 163, 184, 0.2);
+  --primary: #8b5cf6;
+  --primary-foreground: #f8fafc;
+  --secondary: #111827;
+  --secondary-foreground: #f8fafc;
+  --accent: #22d3ee;
+  --card: #0f172a;
+  --card-foreground: #f8fafc;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --shadow-sm: 0 1px 2px rgba(2, 8, 23, 0.4);
+  --shadow-md: 0 10px 30px rgba(2, 8, 23, 0.32);
+  --shadow-lg: 0 22px 55px rgba(2, 8, 23, 0.4);
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+}
+
+.dark {
+  color-scheme: dark;
+}
