@@ -1,11 +1,12 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { MotionConfig } from "framer-motion";
 
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 
 interface ProvidersProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export function Providers({ children }: ProvidersProps) {

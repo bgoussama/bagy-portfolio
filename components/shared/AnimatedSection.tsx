@@ -1,17 +1,23 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { motion } from "framer-motion";
 
+import { revealOnScroll } from "@/lib/animations";
+
 interface AnimatedSectionProps {
-  children: React.ReactNode;
+  children: ReactNode;
+  className?: string;
 }
 
-export function AnimatedSection({ children }: AnimatedSectionProps) {
+export function AnimatedSection({ children, className }: AnimatedSectionProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 16 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial="hidden"
+      animate="visible"
+      variants={revealOnScroll}
       transition={{ duration: 0.45, ease: "easeOut" }}
+      className={className}
     >
       {children}
     </motion.div>
