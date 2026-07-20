@@ -12,7 +12,7 @@ export function Navbar() {
           <span className="flex h-9 w-9 items-center justify-center rounded-full border border-border/70 bg-muted/50">
             <Sparkles className="h-4 w-4" />
           </span>
-          Bagy Studio
+          Bagy Oussama
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm text-muted-foreground md:flex">
