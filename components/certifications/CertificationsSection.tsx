@@ -22,10 +22,6 @@ export function CertificationsSection() {
           <h2 id="certifications-heading" className="text-3xl font-semibold tracking-[-0.02em] text-foreground sm:text-4xl">
             Certifications &amp; Credentials
           </h2>
-          <p className="max-w-3xl text-[15px] leading-7 text-zinc-300">
-            Selected certifications validating practical expertise in cybersecurity, networking, security operations and
-            secure engineering.
-          </p>
         </div>
 
         <div className="grid items-stretch gap-5 md:grid-cols-2 lg:grid-cols-3">

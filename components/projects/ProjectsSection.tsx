@@ -67,13 +67,10 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
 
         <div className="space-y-10">
           <AnimatedSection>
-            <div className="space-y-3">
+            <div>
               <h2 className="text-3xl font-semibold tracking-[-0.02em] text-foreground sm:text-4xl">
                 Additional Engineering Projects
               </h2>
-              <p className="max-w-3xl text-lg leading-8 text-muted-foreground">
-                Additional academic and software engineering projects covering networking, software development, cryptography, and distributed systems.
-              </p>
             </div>
           </AnimatedSection>
 

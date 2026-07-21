@@ -4,7 +4,6 @@ import { motion, useReducedMotion } from "framer-motion";
 import { FileText, GitFork, Play, Presentation } from "lucide-react";
 
 import { TechStack } from "@/components/projects/TechStack";
-import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import type { Project } from "@/types/project";
 
@@ -62,7 +61,7 @@ export function ProjectCard({ project, index, compact = false }: ProjectCardProp
   const shouldReduceMotion = useReducedMotion();
   const isSecondaryCard = !project.featured;
   const featuredPresentation = !compact ? featuredPresentations[project.id] : undefined;
-  const visibleTechnologies = featuredPresentation?.technologies ?? project.technologies.slice(0, compact ? 5 : 6);
+  const visibleTechnologies = (featuredPresentation?.technologies ?? project.technologies).slice(0, compact ? 5 : 6);
   const visibleDescription = compact
     ? compactDescriptions[project.id] ?? project.description
     : featuredPresentation?.description ?? project.description;
@@ -99,22 +98,7 @@ export function ProjectCard({ project, index, compact = false }: ProjectCardProp
       className={`group relative flex flex-col overflow-hidden rounded-xl border border-violet-400/15 bg-gradient-to-br from-zinc-950/90 via-violet-950/10 to-zinc-950/90 ${compact ? "h-[30rem] p-4 sm:p-5" : isSecondaryCard ? "h-full p-4 sm:p-5" : "h-full p-5"} shadow-[0_18px_65px_rgba(0,0,0,0.18)] ring-1 ring-inset ring-white/[0.03] backdrop-blur transition-[border-color,box-shadow] duration-300 hover:border-violet-300/40 hover:shadow-[0_22px_70px_rgba(139,92,246,0.13)]`}
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(139,92,246,0.1),transparent_36%)] opacity-60 transition-opacity duration-300 group-hover:opacity-100" />
-      {!compact ? (
-        <div className={`relative z-10 flex flex-wrap items-center justify-between ${isSecondaryCard ? "gap-2" : "gap-3"}`}>
-          {project.status ? (
-            <Badge className="border-violet-300/20 bg-violet-500/10 px-2.5 py-0.5 text-[0.6rem] tracking-[0.2em] text-zinc-200">
-              {project.status}
-            </Badge>
-          ) : null}
-          {project.category ? (
-            <span className="rounded-full border border-violet-300/15 bg-violet-500/8 px-2.5 py-0.5 text-[0.6rem] uppercase tracking-[0.2em] text-zinc-300">
-              {project.category}
-            </span>
-          ) : null}
-        </div>
-      ) : null}
-
-      <div className={`relative z-10 flex-1 ${compact ? "space-y-3" : "mt-4 space-y-5"}`}>
+      <div className={`relative z-10 flex-1 ${compact ? "space-y-3" : "space-y-5"}`}>
         <div className={compact ? "space-y-1" : "space-y-2"}>
           <h3 className={`${compact ? "min-h-[4.875rem] text-[1.35rem] md:text-2xl" : "text-2xl md:text-3xl"} font-extrabold leading-[1.08] tracking-[-0.025em] text-foreground`}>
             {project.title || "Project Title"}

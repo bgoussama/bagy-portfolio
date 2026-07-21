@@ -10,21 +10,19 @@ export const experience: Experience[] = [
     endDate: "",
     current: true,
     description:
-      "Currently contributing to the preparation of an internal Security Operations Center through authorized network discovery, infrastructure mapping and vulnerability analysis. The work focuses on identifying assets, exposed services and potential attack surfaces before integrating them into centralized monitoring and incident-detection workflows.",
+      "Supporting the preparation of an internal Security Operations Center through authorized network discovery, asset mapping and vulnerability assessment across Windows, Active Directory, VMware ESXi and Linux environments.",
     technologies: [
       "Nmap",
-      "Network Mapping",
       "Vulnerability Assessment",
-      "SIEM",
       "SOC",
       "Active Directory",
       "VMware ESXi",
       "Linux",
     ],
     achievements: [
-      "Conducted authorized network reconnaissance to identify active hosts, ports, protocols and exposed services.",
-      "Analyzed Windows Server, Active Directory, VMware ESXi and Linux assets for potential vulnerabilities and relevant CVEs.",
-      "Prepared the technical foundation for centralized SOC monitoring, incident detection and automated alerting.",
+      "Mapped active hosts, ports, protocols and exposed services across the authorized internal network.",
+      "Assessed Windows Server, Active Directory, VMware ESXi and Linux assets for vulnerabilities and relevant CVEs.",
+      "Prepared technical findings for centralized SOC monitoring, incident detection and reporting.",
     ],
     logoAlt: "Logo Optipark",
     type: "Internship",
@@ -45,9 +43,7 @@ export const experience: Experience[] = [
       "CodeT5",
       "SonarQube",
       "Trivy",
-      "Python",
       "SAST",
-      "DevSecOps",
     ],
     achievements: [
       "Integrated CodeBERT and CodeT5 to classify risky commits and detect secrets, injection patterns, weak hashes and XSS indicators.",
@@ -74,8 +70,6 @@ export const experience: Experience[] = [
       "Wireshark",
       "SQLMap",
       "Gobuster",
-      "Meterpreter",
-      "Python",
     ],
     achievements: [
       "Identified and exploited SQL injection, XSS and exposed HTTP credentials in vulnerable web applications.",
@@ -101,7 +95,6 @@ export const experience: Experience[] = [
       "Network Security",
       "Cloud Computing",
       "Virtualization",
-      "Cryptography",
     ],
     achievements: [
       "Completed multidisciplinary projects in cybersecurity, cloud infrastructure and secure software engineering.",

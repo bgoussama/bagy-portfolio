@@ -16,10 +16,6 @@ export function SkillsSection({ skills }: SkillsSectionProps) {
           <h2 id="skills-heading" className="text-4xl font-semibold tracking-[-0.025em] text-foreground sm:text-[2.75rem]">
             Skills &amp; Expertise
           </h2>
-          <p className="max-w-3xl text-base leading-7 text-zinc-200/90">
-            Core technologies, platforms and engineering domains developed through internships, academic projects and
-            hands-on cybersecurity practice.
-          </p>
         </div>
 
         <div className="grid items-stretch gap-6 md:grid-cols-2">

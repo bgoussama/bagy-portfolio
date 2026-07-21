@@ -3,9 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { FileText, GitFork, Play, Presentation } from "lucide-react";
 
-import { ProjectTags } from "@/components/projects/ProjectTags";
 import { TechStack } from "@/components/projects/TechStack";
-import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { slideInUp } from "@/lib/animations";
 import type { Project } from "@/types/project";
@@ -55,30 +53,16 @@ export function FeaturedProject({ project }: FeaturedProjectProps) {
         <div className="relative overflow-hidden rounded-[1.9rem] border border-violet-300/20 bg-gradient-to-br from-zinc-950/85 via-violet-950/20 to-zinc-950/90 p-8 md:p-10">
           <div className="pointer-events-none absolute inset-0 rounded-[1.9rem] bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.12),transparent_25%)] opacity-40" />
           <div className="relative z-10">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              {project.status ? (
-                <Badge className="border-violet-300/25 bg-violet-500/12 px-2.5 py-0.5 text-[0.6rem] tracking-[0.2em] text-zinc-200">
-                  {project.status}
-                </Badge>
-              ) : null}
-              {project.category ? (
-                <span className="rounded-full border border-violet-300/20 bg-violet-500/10 px-2.5 py-0.5 text-[0.6rem] uppercase tracking-[0.2em] text-zinc-300">
-                  {project.category}
-                </span>
-              ) : null}
-            </div>
-
-            <div className="mt-8 grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+            <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
               <div className="flex h-full flex-col gap-5">
                 <div className="space-y-1">
-                  <h2 className="text-4xl font-bold leading-[1.05] tracking-[-0.035em] text-foreground sm:text-5xl">
+                  <h2 className="text-4xl font-bold leading-[1.1] tracking-[-0.035em] text-foreground sm:text-5xl">
                     {project.title || "Featured Project"}
                   </h2>
                   <p className="line-clamp-3 max-w-2xl text-[15px] leading-7 text-zinc-300">
                     {project.description || "Featured project details will be added soon."}
                   </p>
                 </div>
-                <ProjectTags tags={project.tags} />
                 <div className="[&_span]:border-violet-300/15 [&_span]:bg-black/25">
                   <TechStack technologies={visibleTechnologies} />
                 </div>
@@ -114,10 +98,12 @@ export function FeaturedProject({ project }: FeaturedProjectProps) {
               >
                 <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-br from-white/10 via-transparent to-white/0 opacity-60" />
                 <div className="relative z-10">
-                  <p className="text-sm font-medium uppercase tracking-[0.26em] text-violet-200/80">Featured Focus</p>
-                  <p className="mt-3 text-[15px] leading-7 text-zinc-300">
-                    {project.longDescription || "Detailed project overview will be added soon."}
-                  </p>
+                  <p className="text-sm font-medium text-violet-200/80">Project summary</p>
+                  <ul className="mt-3 list-disc space-y-2 pl-5 text-[15px] leading-6 text-zinc-300">
+                    <li>Generates validated DevSecOps and Infrastructure-as-Code artifacts from natural-language requirements.</li>
+                    <li>Automates security checks, cloud provisioning and CI/CD execution with Jenkins, Terraform, SonarQube and Trivy.</li>
+                    <li>Provides deployment monitoring through Prometheus and Grafana.</li>
+                  </ul>
                 </div>
               </motion.div>
             </div>

@@ -58,8 +58,6 @@ export function ExperienceCard({ experience, index }: ExperienceCardProps) {
         <div className="space-y-2">
           <p className="text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl">{experience.role}</p>
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
-            {experience.location ? <span>{experience.location}</span> : null}
-            <span className="uppercase tracking-[0.24em]">{experience.type}</span>
             {dateRange ? <span>{dateRange}</span> : null}
           </div>
         </div>
@@ -76,7 +74,7 @@ export function ExperienceCard({ experience, index }: ExperienceCardProps) {
 
         {experience.achievements.length > 0 ? (
           <div className="space-y-1">
-            <p className="text-sm uppercase tracking-[0.28em] text-muted-foreground">Key Achievements</p>
+            <p className="text-sm font-medium text-muted-foreground">Key achievements</p>
             <ul className="list-disc space-y-1.5 pl-5 text-[15px] leading-6 text-zinc-300">
               {experience.achievements.map((achievement) => (
                 <li key={achievement}>{achievement}</li>

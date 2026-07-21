@@ -42,7 +42,7 @@ export default function Home() {
                     Telecommunications Engineering
                   </h1>
                   <p className="max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
-                    Final-year Engineering Student in Cybersecurity & Telecommunication Systems at ENSA Marrakech, Cadi Ayyad University. Currently completing a Software Engineering Internship at Optipark. Passionate about Cybersecurity, AI Security, Cloud Security, Offensive Security and Secure Software Engineering.
+                    Final-year engineering student in Cybersecurity and Telecommunication Systems at ENSA Marrakech. Currently completing a cybersecurity internship at Optipark, with a focus on security engineering, DevSecOps, cloud security and offensive security.
                   </p>
                 </div>
 

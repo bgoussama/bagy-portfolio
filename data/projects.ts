@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "Next-Generation DevSecOps Platform",
     slug: "next-generation-devsecops-platform",
     description:
-      "An AI-powered platform that transforms natural-language requirements into validated and deployable DevSecOps artifacts, including Jenkins pipelines, Terraform infrastructure, Dockerfiles, and Kubernetes manifests.",
+      "Transforms natural-language infrastructure requirements into validated DevSecOps and Infrastructure-as-Code artifacts, then automates security checks, cloud provisioning, CI/CD execution and deployment monitoring. The repository, demo, report and presentation document the complete engineering workflow.",
     longDescription:
       "Designed and implemented an end-to-end DevSecOps platform combining generative AI, Infrastructure as Code, automated security validation, cloud deployment, and continuous monitoring. The platform validates user prompts, generates secure deployment artifacts, pushes them to GitHub, triggers Jenkins pipelines, performs SonarQube and Trivy security checks, provisions AWS infrastructure with Terraform, and exposes monitoring data through Prometheus and Grafana.",
     category: "AI · DEVSECOPS · CLOUD SECURITY",
