@@ -37,20 +37,24 @@ export function SkillCard({ category, index }: SkillCardProps) {
       <div className="relative z-10 flex h-full flex-col gap-5">
         <div className="mb-1 flex items-center gap-5">
           <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-violet-300/25 bg-violet-500/10 text-violet-200">
-            <Icon className="h-6 w-6" aria-hidden="true" />
+            <Icon className="h-[1.8rem] w-[1.8rem]" aria-hidden="true" />
           </span>
           <h3 className="text-xl font-extrabold leading-tight tracking-tight text-foreground md:text-2xl lg:text-3xl">
             {category.title}
           </h3>
         </div>
 
-        <p className="text-[15px] leading-7 text-zinc-200/90">{category.description}</p>
+        <p className="text-base leading-7 text-zinc-200/90">{category.description}</p>
 
         <div className="mt-auto flex flex-wrap gap-2">
-          {category.technologies.map((technology) => (
+          {category.technologies.map((technology, technologyIndex) => (
             <span
               key={technology}
-              className="inline-flex min-h-7 items-center rounded-full border border-violet-300/15 bg-black/25 px-3 py-1 text-[0.65rem] uppercase tracking-[0.2em] text-zinc-400 transition-colors duration-300 hover:border-violet-300/40 hover:bg-violet-500/10 hover:text-zinc-200"
+              className={`inline-flex min-h-7 items-center rounded-full px-3 py-1 text-xs font-medium tracking-[0.02em] transition-colors duration-300 hover:border-violet-300/40 hover:bg-violet-500/10 hover:text-zinc-200 ${
+                technologyIndex < 3
+                  ? "border border-violet-300/35 bg-violet-500/15 text-zinc-200"
+                  : "border border-violet-300/15 bg-black/25 text-zinc-400"
+              }`}
             >
               {technology}
             </span>
