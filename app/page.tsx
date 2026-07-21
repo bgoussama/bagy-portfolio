@@ -42,7 +42,18 @@ export default function Home() {
                     Telecommunications Engineering
                   </h1>
                   <p className="max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
-                    Final-year engineering student in Cybersecurity and Telecommunication Systems at ENSA Marrakech. Currently completing a cybersecurity internship at Optipark, with a focus on security engineering, DevSecOps, cloud security and offensive security.
+                    Final-year engineering student in{" "}
+                    <strong className="font-semibold text-foreground">Cybersecurity &amp; Telecommunication Systems</strong>
+                    {" "}at{" "}
+                    <strong className="font-semibold text-foreground">ENSA Marrakech, Cadi Ayyad University</strong>.
+                    {" "}Currently completing a{" "}
+                    <strong className="font-semibold text-foreground">Software Engineering Internship</strong> at{" "}
+                    <strong className="font-semibold text-foreground">Optipark</strong>. Focused on{" "}
+                    <strong className="font-semibold text-foreground">Cybersecurity</strong>,{" "}
+                    <strong className="font-semibold text-foreground">AI Security</strong>,{" "}
+                    <strong className="font-semibold text-foreground">Cloud Security</strong>,{" "}
+                    <strong className="font-semibold text-foreground">Offensive Security</strong> and{" "}
+                    <strong className="font-semibold text-foreground">Secure Software Engineering</strong>.
                   </p>
                 </div>
 
