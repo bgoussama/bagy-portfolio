@@ -1,4 +1,4 @@
-import { GitBranch, Link2, Mail } from "lucide-react";
+import { Download, GitBranch, Link2, Mail } from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
 import { ProjectsSection } from "@/components/projects/ProjectsSection";
@@ -87,25 +87,14 @@ export default function Home() {
                   </a>
                   <a
                     href="/Oussama_Bagy_CV.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="View Oussama Bagy's CV in a new tab"
-                    className={
-                      buttonVariants({ size: "lg", variant: "default" }) +
-                      " bg-gradient-to-r from-violet-600 to-purple-500 text-white shadow-[0_14px_40px_rgba(126,34,206,0.2)] transition duration-300 hover:-translate-y-0.5 hover:from-violet-500 hover:to-purple-400 hover:shadow-[0_18px_55px_rgba(126,34,206,0.28)]"
-                    }
-                  >
-                    View CV
-                  </a>
-                  <a
-                    href="/Oussama_Bagy_CV.pdf"
                     download
                     aria-label="Download Oussama Bagy's CV as a PDF"
                     className={
                       buttonVariants({ size: "lg", variant: "default" }) +
-                      " bg-gradient-to-r from-violet-600 to-purple-500 text-white shadow-[0_14px_40px_rgba(126,34,206,0.2)] transition duration-300 hover:-translate-y-0.5 hover:from-violet-500 hover:to-purple-400 hover:shadow-[0_18px_55px_rgba(126,34,206,0.28)]"
+                      " h-11 gap-2 bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 px-6 text-base text-white shadow-[0_16px_45px_rgba(139,92,246,0.35)] transition duration-300 hover:-translate-y-0.5 hover:from-violet-400 hover:via-fuchsia-400 hover:to-indigo-400 hover:shadow-[0_20px_60px_rgba(139,92,246,0.45)]"
                     }
                   >
+                    <Download className="size-[1.125rem]" aria-hidden="true" />
                     Download CV
                   </a>
                 </div>
