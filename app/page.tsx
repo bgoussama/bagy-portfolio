@@ -1,4 +1,4 @@
-import { Download, Eye, GitBranch, Link2, Mail } from "lucide-react";
+import { GitBranch, Link2, Mail } from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
 import { ProjectsSection } from "@/components/projects/ProjectsSection";
@@ -91,11 +91,10 @@ export default function Home() {
                     rel="noopener noreferrer"
                     aria-label="View Oussama Bagy's CV in a new tab"
                     className={
-                      buttonVariants({ size: "lg", variant: "outline" }) +
-                      " w-full border-white/15 bg-background/60 shadow-[0_12px_32px_rgba(0,0,0,0.16)] backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-violet-400/50 hover:bg-violet-500/10 sm:w-auto"
+                      buttonVariants({ size: "lg", variant: "default" }) +
+                      " bg-gradient-to-r from-violet-600 to-purple-500 text-white shadow-[0_14px_40px_rgba(126,34,206,0.2)] transition duration-300 hover:-translate-y-0.5 hover:from-violet-500 hover:to-purple-400 hover:shadow-[0_18px_55px_rgba(126,34,206,0.28)]"
                     }
                   >
-                    <Eye aria-hidden="true" />
                     View CV
                   </a>
                   <a
@@ -104,10 +103,9 @@ export default function Home() {
                     aria-label="Download Oussama Bagy's CV as a PDF"
                     className={
                       buttonVariants({ size: "lg", variant: "default" }) +
-                      " w-full bg-gradient-to-r from-indigo-500 to-violet-500 text-white shadow-[0_14px_40px_rgba(99,102,241,0.24)] transition duration-300 hover:-translate-y-0.5 hover:from-indigo-400 hover:to-violet-400 hover:shadow-[0_18px_55px_rgba(99,102,241,0.32)] sm:w-auto"
+                      " bg-gradient-to-r from-violet-600 to-purple-500 text-white shadow-[0_14px_40px_rgba(126,34,206,0.2)] transition duration-300 hover:-translate-y-0.5 hover:from-violet-500 hover:to-purple-400 hover:shadow-[0_18px_55px_rgba(126,34,206,0.28)]"
                     }
                   >
-                    <Download aria-hidden="true" />
                     Download CV
                   </a>
                 </div>
