@@ -413,7 +413,6 @@ export const projects: Project[] = [
     githubUrl: "",
     demoUrl: "",
     repositoryUrl: "https://github.com/bgoussama/securecloud-sentinel",
-    presentationUrl: "/projects/securecloud-sentinel/presentation.pdf",
     imageAlt: "SecureCloud-Sentinel AWS cloud security monitoring architecture",
     tags: ["Cloud Security"],
     technologies: ["AWS", "Terraform", "Amazon S3", "AWS CloudTrail"],
