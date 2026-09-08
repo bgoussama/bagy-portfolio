@@ -398,4 +398,25 @@ export const projects: Project[] = [
       "Streams AI-assisted hardening guidance and exports JSON and PDF audit reports",
     ],
   },
+  {
+    id: "securecloud-sentinel",
+    title: "SecureCloud-Sentinel",
+    slug: "securecloud-sentinel",
+    description:
+      "AWS cloud security monitoring platform provisioned with Terraform (eu-west-3), deploying a hardened CloudTrail logging pipeline with S3-based secure log storage, public access blocking, ownership controls and versioning to collect and analyze cloud security events.",
+    longDescription:
+      "AWS cloud security monitoring platform provisioned with Terraform (eu-west-3), deploying a hardened CloudTrail logging pipeline with S3-based secure log storage, public access blocking, ownership controls and versioning to collect and analyze cloud security events.",
+    category: "Cloud Security",
+    status: "Completed",
+    year: "2026",
+    featured: false,
+    githubUrl: "",
+    demoUrl: "",
+    repositoryUrl: "https://github.com/bgoussama/securecloud-sentinel",
+    presentationUrl: "/projects/securecloud-sentinel/presentation.pdf",
+    imageAlt: "SecureCloud-Sentinel AWS cloud security monitoring architecture",
+    tags: ["Cloud Security"],
+    technologies: ["AWS", "Terraform", "Amazon S3", "AWS CloudTrail"],
+    highlights: [],
+  },
 ];

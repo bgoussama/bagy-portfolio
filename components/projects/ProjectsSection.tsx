@@ -10,7 +10,7 @@ interface ProjectsSectionProps {
 
 const featuredProjectIds = {
   hero: "next-generation-devsecops-platform",
-  large: ["security-operations-center-soc", "tls-posture-analyzer"],
+  large: ["security-operations-center-soc", "tls-posture-analyzer", "securecloud-sentinel"],
   medium: ["infrastructure-hardening-project", "vmware-vsphere-private-cloud-infrastructure"],
 } as const;
 
