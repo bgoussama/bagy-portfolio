@@ -86,8 +86,8 @@ export default function Home() {
                     Skills
                   </a>
                   <a
-                    href="/Oussama_Bagy_CV.pdf"
-                    download
+                    href="/Bagy_Oussama_CV.pdf"
+                    download="Bagy_Oussama_CV.pdf"
                     aria-label="Download Oussama Bagy's CV as a PDF"
                     className={
                       buttonVariants({ size: "lg", variant: "default" }) +
