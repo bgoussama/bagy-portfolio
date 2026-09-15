@@ -102,12 +102,12 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col items-center gap-6 lg:items-end">
-                <div className="relative hidden h-56 w-56 shrink-0 overflow-hidden rounded-full border border-white/10 shadow-[0_20px_60px_rgba(99,102,241,0.3)] ring-1 ring-inset ring-white/10 lg:block xl:h-64 xl:w-64">
+                <div className="relative hidden h-64 w-64 shrink-0 overflow-hidden rounded-3xl border border-white/10 shadow-[0_20px_60px_rgba(99,102,241,0.3)] ring-1 ring-inset ring-white/10 lg:block xl:h-72 xl:w-72">
                   <Image
                     src="/images/oussama-photo.jpeg"
                     alt="Portrait of Oussama Bagy"
                     fill
-                    sizes="(min-width: 1280px) 16rem, 14rem"
+                    sizes="(min-width: 1280px) 18rem, 16rem"
                     className="object-cover"
                     priority
                   />
