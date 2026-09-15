@@ -1,4 +1,5 @@
 import { Download, GitBranch, Link2, Mail } from "lucide-react";
+import Image from "next/image";
 
 import { Container } from "@/components/layout/Container";
 import { ProjectsSection } from "@/components/projects/ProjectsSection";
@@ -100,32 +101,45 @@ export default function Home() {
                 </div>
               </div>
 
-              <aside className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.25)] backdrop-blur">
-                <p className="text-sm font-medium uppercase tracking-[0.3em] text-muted-foreground">
-                  Let&apos;s Connect
-                </p>
-                <nav aria-label="Social links" className="mt-6 flex flex-wrap gap-3">
-                  {socials.map((link) => {
-                    const details = socialDetails[link.label as keyof typeof socialDetails];
-                    const Icon = details.icon;
-                    const isExternal = link.href.startsWith("http");
+              <div className="flex flex-col items-center gap-6 lg:items-end">
+                <div className="relative hidden h-56 w-56 shrink-0 overflow-hidden rounded-full border border-white/10 shadow-[0_20px_60px_rgba(99,102,241,0.3)] ring-1 ring-inset ring-white/10 lg:block xl:h-64 xl:w-64">
+                  <Image
+                    src="/images/oussama-photo.jpeg"
+                    alt="Portrait of Oussama Bagy"
+                    fill
+                    sizes="(min-width: 1280px) 16rem, 14rem"
+                    className="object-cover"
+                    priority
+                  />
+                </div>
 
-                    return (
-                      <a
-                        key={link.label}
-                        href={link.href}
-                        aria-label={details.ariaLabel}
-                        target={isExternal ? "_blank" : undefined}
-                        rel={isExternal ? "noopener noreferrer" : undefined}
-                        className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-background/70 px-4 py-2 text-sm text-foreground transition hover:border-white/20 hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                      >
-                        <Icon className="h-4 w-4" aria-hidden="true" />
-                        <span>{link.label}</span>
-                      </a>
-                    );
-                  })}
-                </nav>
-              </aside>
+                <aside className="w-full rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.25)] backdrop-blur">
+                  <p className="text-sm font-medium uppercase tracking-[0.3em] text-muted-foreground">
+                    Let&apos;s Connect
+                  </p>
+                  <nav aria-label="Social links" className="mt-6 flex flex-wrap gap-3">
+                    {socials.map((link) => {
+                      const details = socialDetails[link.label as keyof typeof socialDetails];
+                      const Icon = details.icon;
+                      const isExternal = link.href.startsWith("http");
+
+                      return (
+                        <a
+                          key={link.label}
+                          href={link.href}
+                          aria-label={details.ariaLabel}
+                          target={isExternal ? "_blank" : undefined}
+                          rel={isExternal ? "noopener noreferrer" : undefined}
+                          className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-background/70 px-4 py-2 text-sm text-foreground transition hover:border-white/20 hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                        >
+                          <Icon className="h-4 w-4" aria-hidden="true" />
+                          <span>{link.label}</span>
+                        </a>
+                      );
+                    })}
+                  </nav>
+                </aside>
+              </div>
             </div>
           </AnimatedSection>
         </Container>
