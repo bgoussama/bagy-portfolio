@@ -7,8 +7,8 @@ export const experience: Experience[] = [
     role: "Cybersecurity Intern (PFA)",
     location: "Marrakech, Morocco",
     startDate: "2026-07",
-    endDate: "",
-    current: true,
+    endDate: "2026-08",
+    current: false,
     description:
       "Designed and deployed an internal SOC monitoring architecture using Splunk (log ingestion, correlation & SIEM) and Zabbix (infrastructure & availability monitoring). Performed network discovery and reconnaissance (Nmap) across the internal network, cross-referencing findings with CVE databases to scope and prioritize SOC monitoring coverage.",
     technologies: [
